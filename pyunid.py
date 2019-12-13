@@ -27,18 +27,6 @@ def main(wf):
     for e in args:
         full_string += e.decode('unicode_escape')+' '
     wf.add_item(title=full_string, subtitle=full_string, largetext=full_string) 
-    # if '.' not in args[0]:
-    #   pass
-    # else:
-       #  link = 'https://api.downfor.cloud/httpcheck/{0}'.format(args[0])
-       #  data = web.get(link).json()
-       #  # Do stuff here ...
-       #  if data['statusCode'] == 200:
-       #    wf.add_item("{} is up!".format(args[0]))
-       #  else:
-       #    wf.add_item("{} is down!".format(args[0]))
-        # Add an item to Alfred feedback            
-    # 
 
     # Send output to Alfred. You can only call this once.
     # Well, you *can* call it multiple times, but subsequent calls
